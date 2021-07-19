@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Oct 11, 2020, 10:46:19 PM
+    Author     : maiso
+*/
+html,body{
+    width: 100%; 
+    margin:0;
+}
+body{
+    background-image: url("ressources/FlashCardBg1.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+    height: 100vh;    
+    font-family: 'Montserrat', sans-serif;
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+.contenu{
+    position:relative;
+    height: 100vh;
+    width: 100%;
+    background: #292b2c;
+}
+.titre{
+    position:relative;
+    top:20%;
+    display:flex;
+    justify-content: center;
+    text-align: center;    
+    color: #f7f7f7;
+    font-weight: bolder;
+    font-variant: small-caps;
+    font-size:calc(40px + 3.5vw);   
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+}
+
+.titre span:first-child{
+    animation: ease-out 2s fadein1;
+}
+.titre span:last-child{
+    animation: ease-out 2s fadein2;
+}
+
+@keyframes fadein1 {
+    0%{
+        opacity:0;
+        transform:translateX(-20%);
+    }
+    100%{
+        opacity:1;
+        transform:translateX(0%);
+    }
+}
+
+@keyframes fadein2 {
+    0%{
+        opacity:0;
+        transform:translateX(20%);
+    }
+    100%{
+        opacity:1;
+        transform:translateX(0%);
+    }
+} 
+@keyframes fade{
+    0%{
+        opacity:0;
+    }
+    100%{
+        opacity:1;
+    }
+}
+
+.login{
+    margin:auto;
+    width:70%;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items:center;
+    text-align: center;
+    height: 100vh;
+    
+}
+.login a{
+    font-weight: bolder;
+    text-decoration: none;
+    padding: 20px 0;
+    width:250px;
+    border:none;
+    color:#292b2c;
+    background-color: #f7f7f7;
+    border-radius:3px;
+    box-shadow: inset 0 0 0 0 black;
+    transition: ease-out 0.4s;
+    font-size: 2rem;
+    outline:none;
+}
+.login a:first-child{
+    animation: ease-out 2s fade;
+}
+.login a:last-child{
+    animation: ease-out 2s fade;
+}
+
+.login a:hover{
+    box-shadow: inset 300px 0 0 0 black;
+    color: cyan;
+    cursor: pointer;
+}
+.intro{
+    width:80%;
+    margin:auto;
+    background: #fffdf7;
+    color:black;
+    padding:70px;
+    border-radius: 10px;
+    margin-top:150px;
+    max-width: 1000px;
+}
+h1{
+    font-variant: small-caps;
+    margin-bottom:70px;
+    font-weight: bold;
+}
+.cards{
+    width:80%;
+    margin:auto;
+    background: #fffdf7;
+    color:black;
+    padding:70px;
+    border-radius: 10px;
+    margin-top:150px;
+    max-width: 1000px;  
+}
+
+.cards img{
+    width:40%;
+    margin: 20px;
+}
+.cards img:last-child{
+    
+    display: block;
+    margin-left: auto;
+    margin-right:auto;
+}
+
+footer{
+    width:100%;
+    height: 150px;
+    background: #292b2c;
+    margin-top:100px;
+    color:white;
+    font-size: 25px;
+    font-variant: small-caps;
+    display: flex;
+    justify-content: center;
+}
