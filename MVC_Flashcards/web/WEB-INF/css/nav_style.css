@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Oct 8, 2020, 5:30:26 PM
+    Author     : maiso
+*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    margin:0; 
+    background-image: radial-gradient(white,#d1f7ff);
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+    height: 100vh;    
+    font-family: 'Montserrat', sans-serif;
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+
+nav{
+    width: 100%;
+    font-family: 'Montserrat',sans-serif ;
+    font-weight: bolder;
+    font-variant: small-caps;
+    background:#292b2c;
+    display: relative;
+    top:0;
+    text-align: center;
+}
+
+.util {
+    margin-right: 15px;
+}
+
+
+/*===========================================TITLE==============================================*/
+nav .title{ margin-right:-100px;}
+
+nav .title span{
+    font-size: 60px;
+    margin: auto;
+    color:white;
+    display: table-cell;
+    text-shadow: 0 15px 15px rgba(0,0,0,0.5);
+}
+nav .title:hover {
+    text-decoration: none;
+}
+.title:hover span{    
+    animation: dance .5s;
+    cursor: pointer;    
+}
+@keyframes dance{
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-15px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+.title span:nth-child(1){
+    animation-delay: .1s;
+}
+.title span:nth-child(2){
+    animation-delay: .2s;
+}
+.title span:nth-child(3){
+    animation-delay: .3s;
+}
+.title span:nth-child(4){
+    animation-delay: .4s;
+}
+.title span:nth-child(5){
+    animation-delay: .5s;
+}
+.title span:nth-child(6){
+    animation-delay: .6s;
+}
+.title span:nth-child(7){
+    animation-delay: .7s;
+}
+.title span:nth-child(8){
+    animation-delay: .8s;
+}
+.title span:nth-child(9){
+    animation-delay: .9s;
+}
+.title span:nth-child(10){
+    animation-delay: 1.0s;
+}
+.title span:nth-child(11){
+    animation-delay: 1.1s;
+}
+.title span:nth-child(12){
+    animation-delay: 1.2s;
+}
+
+/* ===========================================LOGIN==============================================*/
+/*Option 1*/
+
+.login{
+    font-size: 40px;
+    display:block;
+    background-color: transparent;    
+    color: white;
+    margin: auto 30px;
+    margin-top:10px;    
+    float: right;    
+    padding : 5px 15px;
+    text-align: center;
+    border-radius: 1000px;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+    border:solid white;
+    
+}
+
+
+.login:hover{    
+    color: #FF5D5D;
+    background-color: white;
+    transition: .5s;
+    
+}
+
+/* ===================================btn====================================================*/
+
+nav button {
+    background: #292b2c;
+    border-radius: 10px;
+    border:solid whitesmoke;
+    position: absolute;
+    top:0;
+    right:0;
+    transform: translate(-220%, 20%);
+    color: whitesmoke;
+}
+nav p {
+    color:whitesmoke;
+    top:0%;
+    right:0%;
+    transform: translate(-100%,35%);
+    position:absolute;
+}
+
+nav i {
+    display: block;
+    font-size: 40px;
+    border-radius: 10px;
+    margin: 5px;
+    padding: 5px;
+}
+nav button:focus{
+     transform: translate(-220%, 20%);
+}
