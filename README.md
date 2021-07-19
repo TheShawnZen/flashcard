@@ -1,1 +1,6 @@
-# flashcard
+# Flashcard
+
+Chez Memo-Rosemont, la performance cognitive de nos clients nous tient à cœur. En ayant pour but d’aider les utilisateurs à se souvenir de ce qui est important, nous leur proposons une application web interactive et éducative créée avec les étudiants en tête. 
+L’application permet à notre clientèle un soulagement quant aux diverses techniques d’apprentissage qui existent. Après avoir remarqué des défauts dans ces dernières, notre solution se trouve dans des flashcards. Il est important de dire que ces cartes magiques sont plus que faciles à utiliser. Une interface graphique exemplaire, construite à la main, fait le pont entre nos précieux clients et notre technologie qui changera peut-être la donne et saura nous démarquer des autres moutons.
+
+Nous développons cette application avec des outils qui ont changé l’industrie pour le mieux. Il s’agit des langages HTML, CSS et JavaScript pour la partie graphique du site, et Java EE et MySql pour les serveurs. Deux environnements de développement ressortent parmi le reste : Visual Studio Code et ApacheNetBeans, qui sont utilisés et respectés par des millions de développeurs du monde entier. Une coopération complète nous est possible grâce à des outils comme Microsoft Teams, Miro et GitLab.
