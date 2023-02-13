@@ -1,0 +1,106 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Oct 12, 2020, 7:52:44 PM
+    Author     : maiso
+*/
+
+.menu{    
+    display: block;
+    width:80%;
+    height: 80vh;
+    margin:auto;
+    margin-top:80px;
+    border-radius: 20px;
+    padding: 20px 20px;
+    
+}
+.menu .gauche{
+    float:left;
+    width:50%;
+    height: 100%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    animation: ease-in  .5s big;
+    
+}
+.menu .droite{
+    position:relative;
+    float:right;
+    width:50%;
+    height: 100%;
+    display:flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: space-around;    
+    animation: ease-in  .5s big;
+}
+
+.menu .gauche a{
+    display: block;
+    text-align: center;    
+    padding: 8vh 0;
+    width:80%;
+    border-radius: 10px;
+    background: dodgerblue;
+}
+.menu .droite a{    
+    position:absolute;
+    text-align: center;    
+    padding: 35vh 0;
+    width:80%;
+    border-radius: 10px;
+    background:#008c09;
+}
+
+.menu a{    
+    color:white;
+    letter-spacing:2px;
+    text-transform:uppercase;
+    text-decoration:none;
+    overflow:hidden;
+    
+    font-weight: bolder;
+    opacity:0.6;
+    font-size: 20px; 
+}
+
+.menu a:hover{
+    transition:0.3s;
+    box-shadow:15px 15px 5px rgba(0,0,0,.5);
+    opacity: 1;
+    animation : up 0.2s forwards;    
+}
+
+.menu .droite a:hover {
+    background:#00e30f;
+}
+
+.menu .gauche a:hover {
+    background: dodgerblue;
+}
+@keyframes up{
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(0px);
+    }
+    100%{
+        transform: translateY(-5px) translateX(-5px);
+    }
+}
+@keyframes big{
+    0%{
+        transform: scale(0.1);
+    }    
+    100%{
+        transform: scale(1);
+    }
+}
+
